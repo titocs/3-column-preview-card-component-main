@@ -104,6 +104,14 @@ svg {
     .container {
         flex-direction: column;
         height: 100%;
+        width: 88%;
+    }
+    svg {
+        margin-top: 3px;
+    }
+    .content {
+        margin-left: 48px;
+        margin-right: 50px;
     }
     .sedans {
         border-radius: 8px 8px 0px 0px;
@@ -112,7 +120,9 @@ svg {
         border-radius: 0px 0px 8px 8px;
     }
     .konten {
-        margin-bottom: 14px;
+        margin-bottom: 10px;
+        width: 100%;
+        margin-right: 0px;
     }
     .judul {
         margin-bottom: 20px;
