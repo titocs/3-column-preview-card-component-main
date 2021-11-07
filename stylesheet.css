@@ -1,0 +1,120 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white: hsla(0, 59%, 61%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+}
+
+body {
+    max-width: 1440px;
+    font-size: 15px;
+    background-color: var(--Very-light-gray);
+}
+
+.container {
+    color: var(--Very-light-gray);
+    display: flex;
+    justify-content: center;
+    height: 470px;
+    width: 75%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.judul {
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+.konten, .tombol {
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+/* ----- CLass masing-masing mobil -------*/
+.sedans {
+    background-color: var(--Bright-orange);
+    border-radius: 8px 0px 0px 8px;
+}
+
+.suvs {
+    background-color: var(--Dark-cyan);
+}
+
+.luxury {
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0px 8px 8px 0px;
+}
+
+/* ------------------------ */
+
+.content {
+    margin: 43px;
+}
+
+svg {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.judul {
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.konten {
+    margin-bottom: 80px;
+    opacity: 0.7;
+    width: 205px;
+    line-height: 23px;
+}
+
+.tombol {
+    font-size: 11px;
+    font-weight: normal;
+    padding: 10px 20px;
+    border: 2px solid var(--Very-light-gray);
+    border-radius: 38px;
+    width: 110px;
+    background-color: white;
+    transition: All 0.4s ease-in-out;
+}
+
+.tombol:hover {
+    background-color: transparent;
+    color: white;
+    mix-blend-mode: hard-light;
+    cursor: pointer;
+}
+
+.satu { color: var(--Bright-orange); }
+.dua { color: var(--Dark-cyan); }
+.tiga{ color: var(--Very-dark-cyan); }
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 375px) {
+    .container {
+        flex-direction: column;
+        height: 100%;
+    }
+    .sedans {
+        border-radius: 8px 8px 0px 0px;
+    }
+    .luxury {
+        border-radius: 0px 0px 8px 8px;
+    }
+    .konten {
+        margin-bottom: 14px;
+    }
+    .judul {
+        margin-bottom: 20px;
+    }
+}
